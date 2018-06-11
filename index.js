@@ -16,13 +16,11 @@ function getDataFromApi(searchTerm, callBack) {
 function renderResult(result) {
   return `
   <div>
-    <div class ="search-result">
-    <p class ="title">${result.snippet.title}</p>
-    <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank">
-    <img src="${result.snippet.thumbnails.medium.url}" class="thumbnail-image">
-    </a>
-    </div>
-  </div>
+    <h2>
+    <a class="js-result-name" href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank">${result.snippet.title}</a> 
+    </h2>
+    <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank"><img src="${result.snippet.thumbnails.medium.url}"></a>
+  </div> 
   `;
 }
 
