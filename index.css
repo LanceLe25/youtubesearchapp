@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; 
 }
 
 body {
@@ -19,16 +23,16 @@ h1 {
   padding: 10px;
 }
 
-.js-search {
+.js-query {
   font-size: 1.4em;
-  margin-top: 30px;
+  margin: 30px;
   margin-right: 5px;
 }
 .container {
   text-align: center;
 }
 
-.submit-button {
+.search-button {
   font-size: 1.4em;
   background-color: #455A64;
   border-type: solid;
